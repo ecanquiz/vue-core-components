@@ -1,0 +1,48 @@
+{
+  "name": "@ecanquiz/vue-forms",
+  "version": "0.0.2",
+  "description": "Components for forms created from primitive elements",
+  "main": "./dist/vue-forms.umd.js",
+  "module": "./dist/vue-forms.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-forms.mjs",
+      "require": "./dist/vue-forms.umd.js"
+    },
+    "./*": "./dist/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "library"
+  ],
+  "author": "Ernesto Canquiz",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "~5.4.0",
+    "vite": "^5.3.1",
+    "vite-plugin-dts": "^4.2.1",
+    "vue": "^3.4.29",
+    "vue-tsc": "^2.0.21"
+  },
+  "dependencies": {
+    "vue-router": "^4.4.5"
+  }
+}
