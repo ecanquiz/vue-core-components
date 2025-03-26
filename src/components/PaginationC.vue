@@ -9,7 +9,9 @@ const emits = defineEmits<{
   (e: 'getSearch', e: Event): void  
 }>()
 
-const baseUrlApi = process.env.VUE_APP_API_URL+'/api'
+//const baseUrlApi = process.env.VUE_APP_API_URL+'/api'
+const baseUrlApi = process.env.VITE_APP_API_URL+'/api'
+
 
 const getSearch = (link) => emits("getSearch", { page: link.url.split("page=")[1] })
 </script>

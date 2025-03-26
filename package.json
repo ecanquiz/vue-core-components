@@ -1,15 +1,15 @@
 {
-  "name": "@ecanquiz/vue-forms",
-  "version": "0.0.2",
-  "description": "Components for forms created from primitive elements",
-  "main": "./dist/vue-forms.umd.js",
-  "module": "./dist/vue-forms.mjs",
+  "name": "@ecanquiz/vue-core-components",
+  "version": "0.0.1",
+  "description": "Vue core components",
+  "main": "./dist/vue-core-components.umd.js",
+  "module": "./dist/vue-core-components.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vue-forms.mjs",
-      "require": "./dist/vue-forms.umd.js"
+      "import": "./dist/vue-core-components.mjs",
+      "require": "./dist/vue-core-components.umd.js"
     },
     "./*": "./dist/*"
   },

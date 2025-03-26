@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "vue-forms",
-      fileName: "vue-forms",
+      name: "vue-core-components",
+      fileName: "vue-core-components",
     },
     rollupOptions: {
       external: ["vue"],

@@ -5,7 +5,8 @@ defineProps<{
 }>()
 
 //const baseUrlApi = import.meta.env.VITE_APP_API_URL+'/api' 
-const baseUrlApi = process.env.VUE_APP_API_URL+'/api'
+const baseUrlApi = process.env.VITE_APP_API_URL+'/api'
+
 </script>
 
 <template>
