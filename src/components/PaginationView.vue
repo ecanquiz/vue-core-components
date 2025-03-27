@@ -1,17 +1,17 @@
 <script setup lang="ts">
-// @ts-nocheck
-defineProps<{
-  links: []
+import type { Link } from '../types/Link'
+
+const props = defineProps<{
+  links: Link[]
 }>()
 
-//const baseUrlApi = import.meta.env.VITE_APP_API_URL+'/api' 
-const baseUrlApi = process.env.VITE_APP_API_URL+'/api'
-
+    // NOT WORKING `${import.meta.env.VITE_APP_API_URL}/api`  
+const baseUrlApi = `${process.env.VITE_APP_API_URL}/api`;
 </script>
 
 <template>
   <div class="mt-6 -mb-1 flex flex-wrap">
-    <template v-for="(link, key) in links" :key="key">      
+    <template v-for="(link, key) in props.links" :key="key">      
       <div
         v-if="link.url === null"        
         class="mr-1 mb-1 px-4 py-3 text-sm border rounded text-gray-400"
